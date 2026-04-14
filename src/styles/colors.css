@@ -1,0 +1,304 @@
+:root {
+    --fe-vermelho-carmim: #C21807;  
+    --fe-vermelho-tijolo: #B33A3A;  
+    --fe-laranja-burnt: #E25822;  
+    --fe-amarelo-mostarda: #F0C419;  
+    --fe-bege-quente: #E6D4A4;  
+    --fe-preto-fogo: #1C1C1C;  
+}
+
+
+ 
+.bg-fe-fire {
+    background-color: var(--fe-vermelho-carmim) !important;  
+}
+
+.bg-fe-heart {
+    background-color: var(--fe-vermelho-tijolo) !important;  
+}
+
+.bg-fe-flame {
+    background-color: var(--fe-laranja-burnt) !important;  
+}
+
+.bg-fe-spark {
+    background-color: var(--fe-amarelo-mostarda) !important;  
+}
+
+.bg-fe-sand {
+    background-color: var(--fe-bege-quente) !important;  
+}
+
+.bg-fe-dark {
+    background-color: var(--fe-preto-fogo) !important;  
+}
+
+ 
+.text-fe-fire {
+    color: var(--fe-vermelho-carmim) !important;
+}
+
+.text-fe-heart {
+    color: var(--fe-vermelho-tijolo) !important;
+}
+
+.text-fe-flame {
+    color: var(--fe-laranja-burnt) !important;
+}
+
+.text-fe-spark {
+    color: var(--fe-amarelo-mostarda) !important;
+}
+
+.text-fe-sand {
+    color: var(--fe-bege-quente) !important;
+}
+
+.text-fe-dark {
+    color: var(--fe-preto-fogo) !important;
+}
+
+
+.btn-fe-fire {
+    padding: 0.5rem 1.25rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--fe-amarelo-mostarda);
+    background-color: var(--fe-vermelho-carmim);
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-fe-fire:hover {
+    background-color: #A61705;  
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-fe-flame {
+    padding: 0.5rem 1.25rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: var(--fe-vermelho-carmim);            
+    background-color: transparent;             
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--fe-vermelho-carmim);     
+    border-radius: 0.5rem;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-fe-flame:hover {
+    background-color: var(--fe-laranja-burnt);  
+    color: #ffffff;                              
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);      
+}
+
+
+
+
+#mynav {
+
+    transition: background-color 0.5s ease-out, backdrop-filter 0.5s ease-out,transform 0.5s ease-out;
+    backdrop-filter: blur(0px);
+    box-shadow: none;
+}
+
+.Scrolled {
+    transform: scale(1.04);
+    background-color: var(--fe-preto-fogo);     
+    backdrop-filter: blur(6px);                  
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);      
+}
+
+
+#mynav a {
+    position: relative;
+    color: var(--fe-preto-fogo);
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.4s ease-in-out;
+}
+
+
+#mynav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--fe-laranja-burnt);
+    border-radius: 2px;
+    transition: width 0.3s ease-out;
+}
+
+#mynav a:hover::after {
+    width: 100%;
+}
+
+
+#mynav a:hover {
+    color: var(--fe-amarelo-mostarda);
+}
+
+.Scrolled a {
+    color: var(--fe-amarelo-mostarda) !important; 
+}
+
+.Scrolled a:hover {
+    color: var(--fe-spark);  
+}
+
+ 
+.Scrolled a::after {
+    background-color: var(--fe-spark);
+}
+
+
+#mynav a.active {
+    color: var(--fe-laranja-burnt);
+}
+
+#mynav a.active::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+.main-image {
+    width: 100%;
+     
+    max-width: 400px;
+     
+    min-width: 400px;
+     
+    height: auto;
+     
+    max-height: 400px;
+     
+    min-height: 400px;
+     
+    border: 2px solid var(--fe-bege-quente);
+    object-fit: contain;
+     
+}
+
+ 
+.imgPrincioal .thumb-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+ 
+.thumb-image {
+    width: 100px;
+     
+    height: 100px;
+     
+    border: 2px solid var(--fe-bege-quente);
+    object-fit: cover;
+     
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.thumb-image:hover {
+    transform: scale(1.05);
+    border-color: var(--fe-vermelho-carmim);
+}
+
+ 
+.product-title {
+    font-size: 2rem;
+    color: var(--fe-preto-fogo);
+    margin-bottom: 1rem;
+}
+
+.product-desc {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--fe-vermelho-carmim);
+}
+
+.btn-primary {
+    background-color: var(--fe-vermelho-carmim);
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--fe-laranja-burnt);
+}
+
+
+
+
+
+
+
+
+
+ 
+.btn.cart-button {
+    background-color: transparent;
+    border: 2px solid var(--fe-vermelho-carmim);
+    color: var(--fe-vermelho-carmim);
+    transition: all 0.2s;
+}
+
+ 
+.btn.cart-button:hover {
+    background-color: var(--fe-vermelho-carmim);
+    color: #fff;
+}
+
+ 
+.btn.cart-button.favorito {
+    background-color: var(--fe-vermelho-tijolo);
+    color: #fff;
+    border-color: var(--fe-vermelho-tijolo);
+}
+
+ 
+.btn.cart-button.favorito:hover {
+    background-color: var(--fe-laranja-burnt);
+    border-color: var(--fe-laranja-burnt);
+}

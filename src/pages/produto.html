@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Seus estilos -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/colors.css">
+
+    <title>Renascer</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top px-5 w-100" style="background-color: var(--fe-preto-fogo);"
+        id="mynav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../img/home/Renacer_ Cross and Roots.png" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mylinks"
+                aria-controls="mylinks" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mylinks">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link active">Home</a></li>
+
+                    <li class="nav-item ms-3">
+                        <button class="btn position-relative" data-bs-toggle="offcanvas"
+                            data-bs-target="#carrinhoPanel">
+                            <i class="bi bi-cart-fill fs-4 text-light"></i>
+
+                            <span id="cart-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhoPanel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Seu Carrinho</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div id="cart-items">
+            </div>
+
+            <hr>
+
+            <h5>Total: <span id="cart-total">R$ 0,00</span></h5>
+
+            <button class="btn btn-success w-100 mt-3" id="botao-comprar">Finalizar Compra</button>
+        </div>
+    </div>
+
+
+
+    <!-- Main Product Section -->
+    <main class="container my-5 pt-5">
+        <div class="row align-items-center g-4 my-5">
+            <!-- Galeria de imagens -->
+            <div class="col-lg-6 d-flex flex-column align-items-center imgPrincioal">
+                <img src="../img/produtos/main.jpg" class="img-fluid rounded main-image mb-3" alt="Produto principal">
+                <div class="d-flex justify-content-start gap-2">
+                    <img src="../img/produtos/thumb1.jpg" class="img-fluid rounded thumb-image img1" alt="Imagem 1">
+                    <img src="../img/produtos/thumb2.jpg" class="img-fluid rounded thumb-image img2" alt="Imagem 2">
+                    <img src="../img/produtos/thumb3.jpg" class="img-fluid rounded thumb-image img3" alt="Imagem 3">
+                </div>
+            </div>
+
+            <!-- Informações do produto -->
+            <div class="col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start">
+                <h1 class="product-title">Nome do Produto</h1>
+                <p class="product-price">R$ 299,99</p>
+
+                <div class="d-flex gap-2 mt-3 justify-content-center justify-content-lg-start">
+                    <button class="btn btn-primary btn-lg" id="buynow">Comprar Agora</button>
+                    <button class="btn btn-outline-warning btn-lg cart-button">
+                        <i class="bi bi-cart-fill"></i> Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center text-lg-start">
+                <h2 class="mt-4">Descrição do Produto</h2>
+                <p>
+                    Nossa marca foi criada com um propósito muito maior do que apenas vestir: levar o amor de JESUS
+                    através das
+                    nossas estampas.
+                    Cada peça transmite fé, esperança e transformação. Acreditamos que a moda pode ser um canal de
+                    evangelização, tocando vidas
+                    e chegando a lugares onde a Palavra precisa ser semeada.
+                </p>
+
+                <p>
+                    Trabalhamos diariamente para entregar o melhor produto, com preço justo e altíssima qualidade. A
+                    Renascer
+                    oferece designs
+                    exclusivos para público masculino, feminino e infantil, incluindo moda StreetWear. Nossos produtos
+                    premium
+                    não podem faltar
+                    no seu guarda-roupa, trazendo versatilidade, estilo e conforto para o seu dia a dia.
+                </p>
+
+                <h3 class="mt-4">Detalhes da Camiseta</h3>
+                <p>
+                    Modelo Oversized com gola redonda e canelada, costura reforçada de ombro a ombro e reforço na gola,
+                    garantindo melhor
+                    acabamento e durabilidade.
+                </p>
+
+                <h3>Informações Técnicas</h3>
+                <ul>
+                    <li>Malha 100% algodão</li>
+                    <li>Gramatura aproximada: 220 g/m²</li>
+                    <li>Peso aproximado da peça: 280 g</li>
+                </ul>
+
+                <h3 class="mt-4">Tecido (Suedine Premium Penteada)</h3>
+                <ul>
+                    <li>Toque macio, confortável e durável</li>
+                    <li>Algodão penteado, removendo fibras curtas e impurezas</li>
+                    <li>Tecido mais liso, resistente e com toque aveludado</li>
+                </ul>
+
+                <h3>Tamanhos Disponíveis</h3>
+                <table style="margin: 0 auto; border-collapse: collapse; width: 90%; max-width: 500px;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Tamanho</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Altura</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Largura</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Manga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">P</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">72 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">50 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">20 cm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">M</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">74 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">53 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">21 cm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">G</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">78 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">56 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">22 cm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ccc; padding: 8px;">GG</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">81 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">60 cm</td>
+                            <td style="border: 1px solid #ccc; padding: 8px;">24 cm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="mt-4">Atenção</h3>
+                <p>
+                    Sabemos como é difícil comprar online e entender se o produto vai atender às expectativas. Em caso
+                    de
+                    dúvidas,
+                    entre em contato com nossa equipe, que está pronta para ajudar no que for necessário.
+                </p>
+
+                <p><strong>Atenciosamente, Equipe Renascer!</strong></p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/images.js"></script>
+    <script src="../scripts/dinamicsurl.js" type="module"></script>
+    <script type="module" src="../../dist/cartItem.js"></script>
+</body>
+
+</html>

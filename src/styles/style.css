@@ -1,0 +1,188 @@
+@media (min-width: 992px) {
+    #Home {
+        border-bottom-right-radius: 50%;
+        background-image: url("../img/home/thumb2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .img-wrapper {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .img-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+
+        height: 100%;
+
+
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 1) 100%);
+        pointer-events: none;
+    }
+
+    .window1-css {
+        width: min(300px, 40vw);
+
+        aspect-ratio: 1 / 2;
+        background: url("../img/about/win.jpeg");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        position: relative;
+        border: 3px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        overflow: hidden;
+
+
+        border-top-left-radius: 50% 25%;
+        border-top-right-radius: 50% 25%;
+    }
+
+    .window2-css {
+        width: min(300px, 40vw);
+
+        aspect-ratio: 1 / 2;
+        background: url("../img/about/win.jpeg");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        position: relative;
+        border: 3px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        overflow: hidden;
+
+
+        border-top-left-radius: 50% 25%;
+        border-top-right-radius: 50% 25%;
+    }
+
+}
+
+
+section {
+    background-color: white;
+}
+
+
+
+@media (max-width: 991.98px) {
+
+    #Home {
+        border-bottom-right-radius: 50%;
+        background-image: url("../img/home/thumb1.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .window1-css {
+        width: min(480px, 60vw);
+
+        aspect-ratio: 1 / 2;
+        background: url("../img/about/win.jpeg");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        position: relative;
+        border: 3px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        overflow: hidden;
+
+
+        border-top-left-radius: 50% 25%;
+        border-top-right-radius: 50% 25%;
+    }
+
+    .window2-css {
+        width: min(480px, 60vw);
+
+        aspect-ratio: 1 / 2;
+        background: url("../img/about/Untitled.png");
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        position: relative;
+        border: 3px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        overflow: hidden;
+
+
+        border-top-left-radius: 50% 25%;
+        border-top-right-radius: 50% 25%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.row.align-items-center {
+    align-items: center;
+}
+
+
+
+.valores {
+    background-image: url("../img/about/yannick-pulver-FAU2NI1Uixg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.swiper-slide .card {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.swiper-slide .card img {
+    height: 380px;
+    object-fit: cover;
+}
